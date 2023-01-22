@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=st, initial-scale=1.0">
+    <title>Eu TE AMO...</title>
+</head>
+<body>
+    <style>
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+background-color: #0b1522;
+}
+
+.heart{
+    height: 250px;
+    width: 250px;
+    background-color: red;
+    position: relative;
+    transform: rotate(45deg);
+    box-shadow: -20px 20px 150 #f20044;
+    animation: palpitar 0.5s linear infinite alternate;
+}
+.contenido{
+    position: fixed;
+    margin-bottom:50px;
+    text-align: center;
+}
+
+h1{color: white;}
+h2{color: white;}
+
+@keyframes palpitar{
+    0%{transform: rotate(45des)scale(1.10);}
+    80%{transform: rotate(45des)scale(1.0)}
+    100%{transform: rotate(45des)scale(0.8)}
+
+}
+.heart::before{
+    content: "";
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    background-color: red;
+    right: 50%;
+    border-radius: 50%;
+    box-shadow: 20px 20px 150 #f20044;
+}
+.heart::after{
+    content: "";
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    background-color: red;
+    top: -50%;
+    border-radius: 50%;
+    box-shadow: 20px 20px 150 #f20044;
+}
+
+    </style>
+
+    <div class="heart"></div>
+    <div class="contenido"><h1>Eu Amo Amar VoCê</h1></div>
+    
+</body>
+</html>
